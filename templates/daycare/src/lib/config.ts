@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ember",
-  niche: "daycare",
-  name: "Sunshine Sprouts Learning Center",
-  tagline: "Where Little Minds Grow Big.",
-  phone: "(555) 901-2345",
-  phoneHref: "tel:+15559012345",
-  email: "hello@sunshinesprouts.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Mountain House", "Manteca", "Lathrop", "Banta", "Stockton"],
-  license: "CA Community Care Lic #901234",
-  since: "2011",
-  google_rating: "5.0",
-  review_count: "189",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "San Jose Daycare 中文幼儿园",
+    tagline: "Nurturing Young Minds Daily",
+    phone: "(408) 318-8811",
+    phoneHref: "tel:+14083188811",
+    email: "info@sanjosedaycare.com",
+    address: "4029 Payne Ave, San Jose, CA 95117, USA",
+    city: "San Jose",
+    serviceAreas: ["San Jose", "Santa Clara", "Campbell", "Cupertino", "Saratoga"],
+    license: "CA State Licensed #430709384",
+    since: "2005",
+    google_rating: "4.9",
+    review_count: "150",
+    emergency: false,
+    theme: "navy",
+    niche: "daycare",
+  },
 
   services: [
-  { icon: "baby", title: "Infant Care", desc: "Ages 6 weeks–18 months. Nurturing 1:3 ratios, sleep routines, tummy time, and sensory play in a safe, loving environment.", urgent: false },
-  { icon: "users", title: "Toddler Program", desc: "Ages 18 months–3 years. Language-rich activities, social skills, and guided exploration. Daily progress photos shared.", urgent: false },
-  { icon: "book-open", title: "Pre-K Curriculum", desc: "Ages 3–5. Kindergarten readiness through play-based learning. Reading foundations, numbers, and creative arts.", urgent: false },
-  { icon: "sun", title: "After-School Care", desc: "Safe pickup from local schools. Homework help, healthy snacks, and enrichment activities until 6pm.", urgent: false },
-  { icon: "calendar", title: "Summer Camp", desc: "Fun-packed 8-week summer program. Themes, field trips, art, science experiments, and outdoor play.", urgent: false },
-  { icon: "clock", title: "Drop-In Care", desc: "Flexible drop-in slots available. Date night, appointment, or work meeting. Licensed, safe, no commitment.", urgent: false },
-],
+    { icon: "heart", title: "Infant Care", desc: "Gentle, attentive care for your baby's first crucial months.", urgent: false },
+    { icon: "sparkles", title: "Toddler Program", desc: "Engaging activities to foster curiosity and early development.", urgent: false },
+    { icon: "home", title: "Pre-K Curriculum", desc: "Preparing children for kindergarten with a comprehensive learning plan.", urgent: false },
+    { icon: "clock", title: "After-School Care", desc: "Safe and stimulating environment for school-aged children.", urgent: false },
+    { icon: "sun", title: "Summer Camp", desc: "Fun-filled themed weeks with educational and recreational activities.", urgent: false },
+    { icon: "briefcase", title: "Drop-In Care", desc: "Flexible care options for your occasional needs.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Priya M.", location: "Tracy, CA", stars: 5, text: "My daughter cried at daycare drop-off everywhere else. First day at Sunshine Sprouts she walked right in. The teachers are incredible — she has grown so much." },
-  { name: "Jason & Amy C.", location: "Mountain House, CA", stars: 5, text: "Both our kids have been here since infant care. The curriculum is excellent — our son started K already reading. Safe, clean, and genuinely loving staff." },
-  { name: "Fatima A.", location: "Manteca, CA", stars: 5, text: "The daily photos and updates give me total peace of mind at work. My toddler is thriving socially and learning so fast. Worth every penny." },
-],
+    { name: "Emily R.", location: "San Jose, CA", stars: 5, text: "San Jose Daycare has been a blessing for our family. Our daughter, Lily, started in the Toddler Program last year, and she absolutely loves it. The teachers are incredibly warm and attentive, and we've seen such a positive change in her social skills and language development. Worth every penny!" },
+    { name: "David L.", location: "Santa Clara, CA", stars: 5, text: "We enrolled our son in the Pre-K Curriculum, and he's thriving! The bilingual environment is fantastic, and he's picking up Mandarin so quickly. The staff kept us informed about his progress, and we felt completely confident in their care. Highly recommend for any parent looking for quality education." },
+    { name: "Sarah K.", location: "Campbell, CA", stars: 5, text: "Finding reliable infant care was a huge stress, but San Jose Daycare exceeded all our expectations. Our baby, Noah, was always happy and well-cared for. The facility is clean, and the communication from the caregivers was excellent. It gave us peace of mind knowing he was in such good hands." }
+  ],
 
   trustBadges: [
-  "State Licensed", "Background-Checked Staff", "CPR Certified Teachers",
-  "Daily Parent Updates", "Organic Snacks", "Kindergarten Readiness Curriculum"
-],
+    "CA State Licensed", "Experienced Educators", "Bilingual Program", "Safe & Nurturing Environment", "CPR & First Aid Certified"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 945,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 15,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 15, label: "Years Experience", suffix: "+", decimals: 0 },
+    { value: 100, label: "Happy Families", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "Real Humans Answer",
-    "desc": "No phone trees. A real person picks up — day and night."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "award", title: "Certified Educators", desc: "Our staff are highly qualified and passionate about early childhood education." },
+    { icon: "shield-check", title: "Safe Environment", desc: "We prioritize safety with secure facilities and strict protocols." },
+    { icon: "heart", title: "Nurturing Care", desc: "Providing a warm, supportive, and loving atmosphere for every child." },
+    { icon: "home", title: "Bilingual Learning", desc: "Exposure to both English and Mandarin for enhanced cognitive development." },
+    { icon: "sparkles", title: "Engaging Curriculum", desc: "Age-appropriate activities designed to stimulate growth and curiosity." },
+    { icon: "phone", title: "Open Communication", desc: "We maintain clear and consistent communication with parents." }
+  ],
 
-  formServiceOptions: [
-  "Infant Care",
-  "Toddler Program",
-  "Pre-K Curriculum",
-  "After-School Care",
-  "Summer Camp",
-  "Drop-In Care"
-],
+  formServiceOptions: ["Infant Care", "Toddler Program", "Pre-K Curriculum", "After-School Care", "Summer Camp", "Drop-In Care"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
